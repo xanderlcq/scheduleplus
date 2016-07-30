@@ -22,7 +22,7 @@ class Student():
     def get_frees(self):
         frees = [self.name]
         for index in range(len(self.schedule)):
-            if self.schedule[index]=='free':
+            if self.schedule[index]=='free' or self.schedule[index]=='' :
                 frees.append(str(index))
         return frees
 
